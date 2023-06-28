@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arlincia's Square root calculator</title>
+   <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body><br><br><br>
+    <div id="container">
+        <div class="main"><br><br>
+            <!-- Calculator Screen -->
+            <form class="calculator" name="calculatorForm"><br><br>
+             <div class="screen"><input type="text" name="screen" id="screen"></div><br>
+             <!-- Button section -->
+             <!-- Buttons 1-4 -->
+              <div class="btn">
+               <input class="btn btn-primary btn btn-danger " type="button" value="1" name="num1" onclick="valueButton(this); ">
+               <input class="btn btn-primary btn btn-danger " type="button" value="2" name="num2" onclick="valueButton(this); ">
+               <input class="btn btn-primary btn btn-danger " type="button" value="3" name="num3" onclick="valueButton(this); ">
+               <input class="btn btn-primary btn btn-danger " type="button" value="4" name="num4" onclick="valueButton(this); ">
+            </div><br>
+
+            <!-- Buttons 5-7 -->
+            <div class="btn">
+                <input class="btn btn-primary btn btn-danger " type="button" value="5" name="num5" onclick="valueButton(this); ">
+                <input class="btn btn-primary btn btn-danger " type="button" value="6" name="num6" onclick="valueButton(this); ">
+                <input class="btn btn-primary btn btn-danger " type="button" value="7" name="num7" onclick="valueButton(this); ">
+            </div><br>
+
+            <!-- Buttons 8-10 -->
+            <div class="btn">
+              <input class="btn btn-primary btn btn-danger " type="button" value="8" name="num8" onclick="valueButton(this); ">
+              <input class="btn btn-primary btn btn-danger " type="button" value="9" name="num9" onclick="valueButton(this); ">
+              <input class="btn btn-primary btn btn-danger " type="button" value="0" name="num0" onclick="valueButton(this); ">
+            </div><br>
+           <!-- Calculate Button -->
+           <div class="btn">
+            <input class="btn btn-primary btn btn-danger " id="calculateButton" type="button" value="Calculate" name="calculate" onclick="Calculate(); ">
+          <!-- All Clear Button -->
+            <button type="button" class="all-clear function btn btn-danger btn-lg" value="all-clear" onclick="clearIt()">AC</button>
+           </div>
+
+     </form>
+    </div><br><br>
+    <p class="codedby">Coded by Arlincia Neff ❤</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
